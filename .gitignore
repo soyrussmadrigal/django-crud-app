@@ -1,0 +1,18 @@
+# Factor
+.factor
+dist
+
+# Env / Secrets
+*secret*
+.env
+
+# Logs
+report*
+logs
+*.log
+
+# Dependency directories
+node_modules/
+
+# Service worker
+sw.*
