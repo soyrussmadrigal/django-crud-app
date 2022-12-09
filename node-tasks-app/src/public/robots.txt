@@ -1,0 +1,7 @@
+#Last update Nov 29, 2021
+
+
+User-agent: *
+Allow: /
+
+Sitemap: https://russapp.xyz/sitemap.xml

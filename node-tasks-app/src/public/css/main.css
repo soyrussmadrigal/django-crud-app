@@ -1,0 +1,11 @@
+body {
+    background-image: linear-gradient(90deg, #159dca, #5e62b0);
+  }
+
+.logo {
+    width: 30%;
+}
+
+.card {
+  margin: 0 auto; /* Added */
+}
