@@ -1,14 +1,77 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Home</h1>
-<p>
-  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sit neque
-  accusantium obcaecati quia omnis doloribus corrupti. Porro, libero quas,
-  quibusdam autem nobis possimus quis maiores nesciunt fuga magnam aliquam
-  voluptatibus mollitia assumenda impedit ratione consequatur at amet. Expedita
-  eum nulla aspernatur, esse, veniam eos nihil quia quod aliquam tempora
-  suscipit ad? Rem, ipsam temporibus. Asperiores magnam vero, eum dolorum
-  accusantium ratione laborum omnis iusto similique quas labore ullam?
-</p>
+<main class="container py-5">
+  <section class="card card-body">
+    <h1 class="text-center">Daily Tasks App</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sit neque
+      accusantium obcaecati quia omnis doloribus corrupti. Porro, libero quas,
+      quibusdam autem nobis possimus quis maiores nesciunt fuga magnam aliquam
+      voluptatibus mollitia assumenda impedit ratione consequatur at amet. Expedita
+      eum nulla aspernatur, esse, veniam eos nihil quia quod aliquam tempora
+      suscipit ad? Rem, ipsam temporibus. Asperiores magnam vero, eum dolorum
+      accusantium ratione laborum omnis iusto similique quas labore ullam?
+    </p>
+    <a href="/signup/" class="btn btn-primary" role="button">Free Account</a>
+  </section>
+</main>
+<main class="container py-1">
+  <div class="card-group">
+    <div class="card text-white bg-secondary mb-3 m-1">
+      <div class="card-header d-flex justify-content-between aling-items-center">Join RussApp<i
+          class="fa fa-user-plus"></i></div>
+      <div class="card-body">
+        <p class="card-text">First, you'll have to create a free account. You just
+          need an email and passwords to register.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3 m-1">
+      <div class="card-header d-flex justify-content-between aling-items-center">Create Your Notes<i
+          class="fa fa-sticky-note"></i></div>
+      <div class="card-body">
+        <p class="card-text">Then, you'll be able to log in your free account and
+          add notes as much as you require for free.</p>
+      </div>
+    </div>
+    <div class="card text-white bg-secondary mb-3 m-1">
+      <div class="card-header d-flex justify-content-between aling-items-center">Save Your Notes<i
+          class="fa fa-lock"></i></div>
+      <div class="card-body">
+        <p class="card-text">Now you can back and login every time that you need
+          to read, update, create or delete notes.</p>
+      </div>
+    </div>
+  </div>
+</main>
 
+<main class="container py-5">
+  <section class="card card-body">
+    <h1 class="text-center">App Build Progress</h1>
+    <div class="progress">
+      <div class="progress-bar progress-bar-stripe bg-success" role="progressbar" style="width: 50%;" aria-valuenow="10"
+        aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+  </section>
+</main>
+
+<main class="container py-2">
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small>3 days ago</small>
+      </div>
+      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      <small>Donec id elit non mi porta.</small>
+    </a>
+    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small class="text-muted">3 days ago</small>
+      </div>
+      <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      <small class="text-muted">Donec id elit non mi porta.</small>
+    </a>
+  </div>
+</main>
 {% endblock %}

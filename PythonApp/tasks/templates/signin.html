@@ -1,14 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Signin</h1>
 
-{{error}}
-
+<main class="container">
+    <div class="row">
+      <div class="col-md-4 offset-4 mt-4">
+        <form method="POST" class="card card-body">
 <form action="/signin/" method="POST">
+    <h1 class="text-center">LogIn</h1>
+    {{error}}
     {% csrf_token %}
-    {{form.as_p}}
-    <button>Signin</button>
+    
+    <div class="mb-3">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" class="form-control" placeholder="Write your username">
+    </div>
+
+    <div class="mb-3">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" class="form-control" placeholder="Write your password">
+    </div>
+
+    <button class="btn btn-primary">LogIn</button>
 </form>
 
 {% endblock %}
