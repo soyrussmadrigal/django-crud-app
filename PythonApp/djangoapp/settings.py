@@ -82,8 +82,7 @@ WSGI_APPLICATION = 'djangoapp.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost/postgres',
-        conn_max_age=600,
+        default='sqlite:///' + os.path.join(BASE_DIR, 'db.sqlite3')
     )
     
 }
