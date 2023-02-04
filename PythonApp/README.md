@@ -1,2 +1,0 @@
-# djangoweb
-# django-crud-app
